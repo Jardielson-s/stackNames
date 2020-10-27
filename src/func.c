@@ -41,18 +41,28 @@ int cheia(Stack *s){
 }
 
 void empilhar(Stack *s,char *n){
-  
-  char aux[100];
-  strcpy(aux,n);
-  printf("\n\t %s ",aux);
-  
-  for(int j = 0;j > MAX;j++)
+  printf("\n\\n\t");
+  for(int i = 0;i < 10;i++)
   {
-      for(int i = 0;i < strlen(aux);i++)
-      {
-         s->name[j][i] = sizeof(n);
-      }
-      s->topo++;
+    printf("%s",*n[i]);
+  }
+  printf("\n\\n\t");
+  char aux[100];
+  
+  int aux1 = (int)strlen(aux);
+  //char name[] = n;
+  printf("\n\t %d ",aux1);
+  
+  s->topo++;
+     
+  for(int i = 0;i < aux1;i++)
+  {
+     s->name[s->topo][i] =(char)sizeof(n);
+  }
+  printf("\n\\n\t");
+  for(int i = 0;i < aux1;i++)
+  {
+      printf(" %s ",(char*)sizeof(s->name[s->topo][i]));
   }
 }
 
